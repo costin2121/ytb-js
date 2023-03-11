@@ -18,11 +18,9 @@ export class Youtube {
    * @param ids One or more ids of the channel(s) you want to search
    */
   async searchChannels(options: ChannelFindOptions) {
-    console.log(!options.forUsername, !options.id)
-    
     if ((!options.forUsername && options.id) || (options.forUsername && !options.id)) {
-      let channels = this._api.channels.list({ ...options, key: this._apiKey});
-      return channels;
+      let channels = await this._api.channels.list({ ...options, key: this._apiKey});
+      return channels.data.items;
     } else throw new Error("Channel username/id needed to be able to search for it.")
   }
 
@@ -32,7 +30,7 @@ export class Youtube {
       key: this._apiKey
     });
 
-    return comments;
+    return comments.data.items;
   }
 
   async search(options: SearchOptions) {
@@ -60,6 +58,6 @@ export class Youtube {
       videoType: options.videoType ? options.videoType : undefined, 
     });
 
-    return search;
+    return search.data.items;
   }
 }
