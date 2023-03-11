@@ -5,7 +5,7 @@
     "url": "https://github.com/DobreCostin21/ytb-js.git"
   },
   "keywords": ["youtube", "youtubeapi", "youtube api", "yt", "yt api", "google", "google apis"],
-  "version": "0.0.7-alpha",
+  "version": "0.0.8-alpha",
   "description": "A simplified way to retrieve data from the Youtube API.",
   "main": "dist/index.js",
   "files": [
