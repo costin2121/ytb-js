@@ -23,20 +23,20 @@ import { Youtube } from 'ytb-js';
 ```js
 const youtube = new Youtube("YOUR_API_KEY");
 
-// This will return a big JSON object with some data about the request and data about the first 10 videos that the api found
+// This will return a JSON object that has data about the first 10 videos that the api found
 ytb.search({ q: "Cat Videos", maxResults: 10 }).then((result) => {
   console.log(result);
 }); 
 
-// This will return the same JSON object as the search method, but this time it will include data about the specified youtube channel
+// This will return a JSON object that has data about the specified channel(s)
 yt.searchChannels({ part: ["snippet"], forUsername: "jacksepticeye" }).then((result) => {
   console.log(result);
 });
 
-// This will return the same JSON object as before, but it will include data about the comments of the specified video
+// This will return a JSON object that has data about the comments of the specified video
 yt.getVideoComments({ part: ["snippet"], videoId: "aV8bxGs3Wy4" }).then((result) => {
   console.log(result);
 });
 ```
-## You can see information about other methods in your code editor, including all of the options that you can include, and information about them too.
+## Information about other methods/method options can be found in the [GitHub Repository](https://github.com/DobreCostin21/ytb-js)
 ### Also this package currently does not have all the methods that googleapis has, but I will try my best to make them as soon as possible
