@@ -5,8 +5,8 @@
 npm install ytb-js
 ```
 
-## Why would i use this instead of the googleapis package?
-I found the googleapis package a little bit hard to use so this package does exactly the same thing as googleapis but its just much easier to use
+## About
+This package is built on top of googleapis and is basically a simplified version of the youtube v3 api.
 
 ## Quickstart
 
