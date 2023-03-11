@@ -2,7 +2,7 @@
   "name": "ytb-js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/DobreCostin21/ytjs.git"
+    "url": "https://github.com/DobreCostin21/ytb-js.git"
   },
   "keywords": ["youtube", "youtubeapi", "youtube api", "yt", "yt api", "google", "google apis"],
   "version": "0.0.4-alpha",
